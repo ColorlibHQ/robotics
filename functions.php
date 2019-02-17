@@ -69,6 +69,11 @@ if( ! defined( 'ROBOTICS_DIR_PATH_WIDGET' ) ) {
 	define( 'ROBOTICS_DIR_PATH_WIDGET', ROBOTICS_DIR_PATH_INC.'widgets/' );
 }
 
+//Companion Folder Directory
+if( ! defined( 'ROBOTICS_DIR_PATH_COMPANION' ) ) {
+	define( 'ROBOTICS_DIR_PATH_COMPANION', ROBOTICS_DIR_PATH_INC.'robotics-companion/' );
+}
+
 
 /**
  * Include File
@@ -88,6 +93,7 @@ require_once( ROBOTICS_DIR_PATH_CLASSES . 'Class-Enqueue.php' );
 require_once( ROBOTICS_DIR_PATH_CLASSES . 'Class-Config.php' );
 require_once( ROBOTICS_DIR_PATH_HOOKS . 'hooks.php' );
 require_once( ROBOTICS_DIR_PATH_HOOKS . 'hooks-functions.php' );
+require_once( ROBOTICS_DIR_PATH_COMPANION . 'robotics-companion.php' );
 require_once( ROBOTICS_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
 require_once( ROBOTICS_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
 

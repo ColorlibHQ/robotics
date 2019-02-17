@@ -241,10 +241,6 @@ class Epsilon_Dashboard_Setup {
 				'integration' => true,
 				'recommended' => false,
 			),
-			'robotics-companion' => array(
-				'integration' => true,
-				'recommended' => false,
-			),
 			'elementor' => array(
 				'integration' => true,
 				'recommended' => false,
@@ -266,7 +262,6 @@ class Epsilon_Dashboard_Setup {
 
 		if ( ! $integrated ) {
 			unset( $arr['contact-form-7'] );
-			unset( $arr['robotics-companion'] );
 			unset( $arr['elementor'] );
 			unset( $arr['one-click-demo-import'] );
 		}
@@ -296,21 +291,6 @@ class Epsilon_Dashboard_Setup {
 						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ) ? __( 'Activate Plugin', 'robotics' ) : __( 'Install Plugin', 'robotics' ),
 						'type'    => 'handle-plugin',
 						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ),
-					),
-				),
-			),
-			array(
-				'id'          => 'robotics-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'title', 'Robotics Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'description', 'Robotics Companion' ),
-				'plugin_slug' => 'robotics-companion',
-				'state'       => false,
-				'check'       => defined( 'ROBOTICS_COMPANION_VERSION' ),
-				'actions'     => array(
-					array(
-						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'installed', 'Robotics Companion' ) ? __( 'Activate Plugin', 'robotics' ) : __( 'Install Plugin', 'robotics' ),
-						'type'    => 'handle-plugin',
-						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'installed', 'Robotics Companion' ),
 					),
 				),
 			),
@@ -368,13 +348,6 @@ class Epsilon_Dashboard_Setup {
 				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'description', 'Contact Form 7', 'verify_cf7' ),
 				'plugin_slug' => 'contact-form-7',
 				'check'       => defined( 'WPCF7_VERSION' ),
-			),
-			array(
-				'id'          => 'robotics-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'title', 'Robotics Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'robotics-companion', 'description', 'Robotics Companion' ),
-				'plugin_slug' => 'robotics-companion',
-				'check'       => defined( 'ROBOTICS_COMPANION_VERSION' ),
 			),
 			array(
 				'id'          => 'robotics-check-elementor',
