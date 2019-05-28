@@ -248,15 +248,7 @@ class Epsilon_Dashboard_Setup {
 			'one-click-demo-import' => array(
 				'integration' => true,
 				'recommended' => false,
-			),
-			'simple-custom-post-order'  => array(
-				'integration' => false,
-				'recommended' => true,
-			),
-			'colorlib-login-customizer' => array(
-				'integration' => false,
-				'recommended' => true,
-			),
+			)
 
 		);
 

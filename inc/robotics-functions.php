@@ -147,7 +147,7 @@ function robotics_theme_logo( $class = '' ) {
 	if( ! empty( $imageUrl[0] ) ) {
 		$siteLogo = '<a class="' . esc_attr( $class ) . '" href="' . esc_url( $siteUrl ) . '"><img src="' . esc_url( $imageUrl[0] ) . '" alt="' . esc_attr( robotics_image_alt( $imageUrl[0] ) ) . '"></a>';
 	}else {
-		$siteLogo = '<h1><a class="' . esc_attr( $class ) . '" href="' . esc_url( $siteUrl ) . '">' . esc_html( get_bloginfo('name') ) . '</a></h1>';
+		$siteLogo = '<h1><a class="' . esc_attr( $class ) . '" href="' . esc_url( $siteUrl ) . '">' . esc_html( get_bloginfo('name') ) . '</a></h1><span class="header-tagline">'. esc_html( get_bloginfo( 'description' ) ) .'</span>';
 	}
 	
 	return '<div id="logo">' . $siteLogo . '</div>';
