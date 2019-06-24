@@ -56,7 +56,7 @@ class Robotics_About extends Widget_Base {
                 'label' => esc_html__( 'Title', 'robotics' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__( 'We’ve made a life that will change you', 'robotics' )
+                'default' => esc_html__( 'We have made a life that will change you', 'robotics' )
             ]
         );
 
@@ -93,7 +93,7 @@ class Robotics_About extends Widget_Base {
                 'label'         => esc_html__( 'Contact', 'robotics' ),
                 'type'          => Controls_Manager::WYSIWYG,
                 'label_block'   => true,
-                'default'       => esc_html__( 'inappropriate behaviour is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.', 'robotics' )
+                'default'       => esc_html__( 'inappropriate behaviour is often laughed off as boys will be boys, women face higher conduct standards especially in the workplace. That is why it is crucial that, as women.', 'robotics' )
             ]
         );
         $this->add_control(

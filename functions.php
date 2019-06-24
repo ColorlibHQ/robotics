@@ -75,6 +75,14 @@ if( ! defined( 'ROBOTICS_DIR_PATH_COMPANION' ) ) {
 }
 
 
+// Admin Enqueue script
+function robotics_admin_script(){
+    wp_enqueue_style( 'robotics-admin', get_template_directory_uri().'/assets/css/robotics_admin.css', false, '1.0.0' );
+    wp_enqueue_script( 'robotics_admin', get_template_directory_uri().'/assets/js/robotics_admin.js', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'robotics_admin_script' );
+
+
 /**
  * Include File
  *
